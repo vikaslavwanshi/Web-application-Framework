@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Home - COMP6006{% endblock %}
+{% block content %}
+<div class="container">
+    <h2>Welcome to COMP6006</h2>
+    <p>This is the homepage content.</p>
+
+    <table class="table table-bordered"> 
+        <thead>
+            <tr> 
+                <th>Title</th>
+                <th>About</th>
+                <th>Published Date</th> 
+            </tr>
+        </thead> 
+        <tbody>
+            {% for x in posts %}
+            <tr>
+                <th>{{ x.posttitle }}</th>
+                <th>{{ x.description }}</th>
+                <th>{{ x.publicationDate }}</th>
+            </tr>
+            {% endfor %} 
+        </tbody>
+    </table>
+{% endblock %}
+</div>
