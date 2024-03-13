@@ -17,11 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+
 import blogapp
+from api.models import BookResource 
+
+book_resource = BookResource()
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("blog/", include('blogapp.urls'))
+    path("blog/", include('blogapp.urls')),
+    path('api/', include(book_resource.urls))
 
 ]
 
