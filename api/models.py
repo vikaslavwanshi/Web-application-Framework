@@ -7,4 +7,4 @@ from django.db import models
 #         queryset = Book.objects.all() # This returns a query, not an object. 
 #         resource_name = 'books'
 
-#new changes
+#new changes Removed
