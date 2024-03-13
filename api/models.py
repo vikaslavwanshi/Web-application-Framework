@@ -6,3 +6,5 @@ from django.db import models
 #     class Meta:
 #         queryset = Book.objects.all() # This returns a query, not an object. 
 #         resource_name = 'books'
+
+#new changes
